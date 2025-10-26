@@ -23,14 +23,14 @@ export class SketchesService {
       this.logger.log('Uploading full image...');
       const imageUrl = await this.storageService.uploadImage(
         imageFileName,
-        createSketchDto.imageUrl  ,
+        createSketchDto.imageData,
         'full',
       );
 
       this.logger.log('Uploading thumbnail...');
       const thumbnailUrl = await this.storageService.uploadImage(
         thumbnailFileName,
-        createSketchDto.thumbnailUrl,
+        createSketchDto.thumbnail,
         'thumbnails',
       );
 

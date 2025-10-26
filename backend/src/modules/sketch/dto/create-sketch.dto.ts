@@ -7,9 +7,9 @@ export class CreateSketchDto {
 
   @IsString()
   @IsNotEmpty()
-  imageUrl: string;
+  imageData: string;
 
   @IsString()
   @IsNotEmpty()
-  thumbnailUrl: string;
+  thumbnail: string;
 }
