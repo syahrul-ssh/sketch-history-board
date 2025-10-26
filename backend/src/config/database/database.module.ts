@@ -13,7 +13,7 @@ import { DatabaseProviders } from './database.provider';
         type: 'postgres',
         url: config.get<string>('DB_URI'),
         autoLoadEntities: true,
-        synchronize: false, // set to false in production
+        synchronize: false,
         logging: config.get<string>('NODE_ENV') !== 'production',
       }),
     }),
